@@ -1,0 +1,48 @@
+/* Basic Header Styles */
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  color: #5b339f;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #919191;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a.active {
+  color: #5b339f;
+  font-weight: bold;
+}
+
+.download-btn {
+  background-color: #5b339f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #472b81;
+}

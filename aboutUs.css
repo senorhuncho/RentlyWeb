@@ -1,0 +1,87 @@
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+/* Company History Styles */
+.company-history {
+  background-color: #ffffff;
+  padding: 40px;
+  margin-top: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.history-content article {
+  margin-bottom: 24px;
+}
+
+.history-content h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Mission & Values Styles */
+.mission-values {
+  padding: 40px;
+  background-color: #f8f9fa;
+}
+
+.mission-values p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.values-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.values-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Team Styles */
+.team {
+  padding: 40px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+.team-grid article {
+  background-color: #ffffff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+.team-grid h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.team-grid p {
+  font-size: 14px;
+  color: #666;
+}
+
