@@ -64,18 +64,6 @@ nav ul li {
   margin-right: 20px;
 }
 
-.download-btn {
-  background-color: #3787E4;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.download-btn:hover {
-  background-color: #2980b9;
-}
 
 /* Mobile menu styles */
 .mobile-menu {
@@ -124,6 +112,10 @@ nav ul li {
       top: 20px;
       right: 20px;
       z-index: 1000;
+  }
+
+  .download-btn{
+    display: none;
   }
 
   .mobile-menu {

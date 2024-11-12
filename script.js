@@ -29,20 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* JavaScript to load header content
-document.addEventListener("DOMContentLoaded", function() {
-  fetch("header.html")
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById("header-container").innerHTML = data;
-      })
-      .catch(error => console.log("Error loading header:", error));
-});
-*/
-
-
-
-
 // JavaScript to load header content and set active link
 document.addEventListener("DOMContentLoaded", function() {
   fetch("header.html")
@@ -57,35 +43,6 @@ document.addEventListener("DOMContentLoaded", function() {
                   link.classList.add("active");
               }
           });
-
-          /* Mobile menu toggle functionality
-          const menuIcon = document.createElement("div");
-          menuIcon.classList.add("menu-icon");
-          menuIcon.innerHTML = "☰";
-          document.querySelector(".container").appendChild(menuIcon);
-
-          menuIcon.addEventListener("click", function() {
-              document.querySelector("header").classList.toggle("nav-active");
-          });*/
       })
       .catch(error => console.log("Error loading header:", error));
-});
-
-$(document).ready(function() {
-    $('.hamburger').click(function() {
-        $('nav').slideToggle();
-    });
-
-    $(window).resize(function() {
-        if ($(window).width() > 768) {
-            $('nav').show();
-            $('.mobile-menu').hide();
-        }
-    });
-
-    // Show mobile menu on smaller screens
-    if ($(window).width() <= 768) {
-        $('nav').hide();
-        $('.mobile-menu').show();
-    }
 });

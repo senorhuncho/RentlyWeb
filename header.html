@@ -14,4 +14,29 @@
       </nav>
       <a href="#" class="download-btn">Download app</a>
   </div>
+
+  <script src="script.js"></script>
 </header>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.hamburger').click(function() {
+        $('nav').slideToggle();
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            $('nav').show();
+            $('.mobile-menu').hide();
+        }
+    });
+
+    // Show mobile menu on smaller screens
+    if ($(window).width() <= 768) {
+        $('nav').hide();
+        $('.mobile-menu').show();
+    }
+});
+</script>
