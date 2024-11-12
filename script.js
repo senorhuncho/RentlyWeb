@@ -71,3 +71,21 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.log("Error loading header:", error));
 });
 
+$(document).ready(function() {
+    $('.hamburger').click(function() {
+        $('nav').slideToggle();
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() > 768) {
+            $('nav').show();
+            $('.mobile-menu').hide();
+        }
+    });
+
+    // Show mobile menu on smaller screens
+    if ($(window).width() <= 768) {
+        $('nav').hide();
+        $('.mobile-menu').show();
+    }
+});

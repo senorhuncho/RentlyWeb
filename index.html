@@ -44,6 +44,18 @@
 
     <div id="footer-container"></div>
 
-   <script src="script.js"></script>  <!--Linking the JavaScript file-->
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var currentPage = window.location.pathname;
+        $('.nav-link').each(function() {
+            var $this = $(this);
+            if (currentPage === $this.attr('href')) {
+                $this.addClass('active');
+            }
+        });
+    });
+</script> <!--Linking the JavaScript file-->
 </body>
 </html>
