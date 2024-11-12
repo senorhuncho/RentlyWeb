@@ -1,2 +1,2 @@
 # Rently-Web
-Rently's website
+Rently's websites
